@@ -1,55 +1,78 @@
-# Offline Budget Planning App
+# Budget Planner Web App
 
-This is a simple budget planning application designed to work entirely offline. It helps you track your income and expenses and provides a clear overview of your financial status.
-
-[**GitHub Repository:** https://github.com/marufx86/Offline-Budget-Planning-App](https://github.com/marufx86/Offline-Budget-Planning-App)
+A simple, offline-first budget planner web application to help you track your income and expenses.  It uses local storage to persist your data, meaning your information stays on your device.
 
 ## Features
 
-*   **Track Income and Expenses:** Easily record your financial transactions.
-*   **Financial Summary:** See your total income, expenses, and net balance at a glance.
-*   **Transaction History:** View a detailed list of all your transactions with the option to delete them.
-*   **Works Offline:** No internet connection required, ensuring your data stays private.
-*   **Responsive Design:** Looks great on any device.
+*   **Transaction Tracking:**  Add income and expense entries with descriptions and amounts.
+*   **Income/Expense Categorization:**  Classify transactions as either income or expense.
+*   **Monthly Filtering:** Filter transactions by month and year to analyze spending habits.
+*   **Summary View:**  See a quick overview of total income, total expenses, and net balance.
+*   **Data Persistence:**  **Important:** Your transaction data is saved locally in your browser's local storage.  This means that **if you close your browser and reopen the app, your data will still be there!**
+*   **Delete Transactions:** Remove unwanted or incorrect transactions from the list.
+*   **View All Transactions:** Ability to view all transactions regardless of month or year.
+*   **Dynamic Month & Year Filters:** Automatically populates month and year dropdowns based on your transaction history.
 
-## Why Use an Offline Budgeting App?
+## Important - Offline & Data Storage
 
-*   **Privacy:** Your financial data remains on your device and is not transmitted over the internet.
-*   **Security:** Reduced risk of data breaches or unauthorized access compared to online apps.
-*   **Accessibility:** Use the app anytime, anywhere, even without an internet connection.
+This application is designed with privacy in mind.  Here's what you need to know:
 
-## How to Use
+*   **Offline Functionality:** Once loaded, the core functionality of this app (adding, editing, viewing transactions) should work even without an internet connection.
+*   **Local Storage Only:**  **Your data is stored *only* within your web browser's local storage.** It is **NOT** transmitted to any external server. This provides a degree of privacy and control over your financial data.
+*   **Privacy Consideration:**  Because the data is stored locally, it's tied to *that specific browser on that specific device*. Clearing your browser's cache or using a different browser/device will result in a blank slate.  Consider this when managing your data.
+*   **Disclaimer:** While local storage offers a simple persistence mechanism, it's not a replacement for robust backup solutions. For long-term storage and data safety, consider exporting/backing up your data manually (feature not currently implemented but could be a future enhancement).  **The developer is not responsible for data loss due to browser issues, accidental data deletion, or other unforeseen circumstances.**
 
-### Clone the Repository
+## Technologies Used
 
-1.  Open your terminal or command prompt.
-2.  Navigate to the directory where you want to store the project.
-3.  Run the following command to clone the repository:
+*   HTML
+*   CSS
+*   JavaScript
 
-    ```bash
-    git clone https://github.com/marufx86/Offline-Budget-Planning-App.git
-    ```
+## Usage
 
-### Run Locally
+1.  Open the `index.html` file in your web browser.
+2.  Add transactions using the form, specifying the description, amount, and type (income or expense).
+3.  Use the month and year filters to view transactions for a specific period.
+4.  The summary section will update automatically to reflect the filtered transactions.
+5.  Delete transactions by clicking the "Delete" button next to the transaction entry.
+6.  Click "View All" to show all transactions from every month and year.
 
-1.  Navigate to the cloned directory:
+## Web Trial
 
-    ```bash
-    cd Offline-Budget-Planning-App
-    ```
+[Budget Planning Web App](https://marufx86.github.io/BudgetPlanning_WebApp/)
 
-2.  Open the `index.html` file in your web browser (e.g., Chrome, Firefox, Safari).
+## Repository
 
-### Start Budgeting!
+[GitHub Repository](https://github.com/marufx86/BudgetPlanning_WebApp)
 
-1.  Use the form to add new transactions.
-2.  See your updated financial summary.
-3.  Manage your transactions in the history list.
+## Future Enhancements
 
-## Potential Improvements
+*   Data export/import (e.g., CSV) for backup and migration.
+*   More detailed categories for transactions.
+*   Visualizations (charts/graphs) of spending patterns.
+*   User authentication (with appropriate privacy considerations).
+*   Responsive design improvements for smaller screens.
 
-*   Data Persistence: Save data so it's not lost when you close your browser.
-*   Date Input: More easily select transaction dates.
-*   Category Management: Group transactions into categories.
-*   Improved User Interface: Enhanced design and user experience.
+## License
 
+MIT License
+
+Copyright (c) 2025 Maruf Khan Ornob
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
